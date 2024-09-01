@@ -1,0 +1,5 @@
+<map id="booking::api::BookingRequestModel" name="booking::api::BookingRequestModel">
+<area shape="rect" id="node1" title=" " alt="" coords="115,95,311,136"/>
+<area shape="rect" id="node2" href="$classbooking_1_1api_1_1IBookingNotifier.html" title=" " alt="" coords="5,13,199,39"/>
+<area shape="rect" id="node3" href="$classbooking_1_1core_1_1IBookingServiceObserver.html" title=" " alt="" coords="223,5,426,47"/>
+</map>
