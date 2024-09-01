@@ -20,6 +20,14 @@ else()
 endif()
 
 
+#if(CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
+#    include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
+#    conan_basic_setup()
+#endif()
+
+## Link the libraries provided by Conan
+#target_link_libraries(CMAKE_PROJECT_NAME ${CONAN_LIBS})
+
 ################################################################################
 ## CONFIGURATION
 ## project configuration

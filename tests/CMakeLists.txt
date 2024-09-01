@@ -11,7 +11,7 @@ project(BookingServiceTests VERSION 1.0.0 LANGUAGES CXX)
 ## basic project settings before use
 ###############################################################################
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Enabling export of all symbols to create a dynamic library
 set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
@@ -42,4 +42,4 @@ target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 ## linking all dependencies
 ###############################################################################
 target_link_libraries(${PROJECT_NAME} gtest gtest_main)
-
+target_link_libraries(${PROJECT_NAME} BookingService)
