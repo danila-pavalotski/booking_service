@@ -7,6 +7,7 @@ Sample project to provide seat booking in theatres.
 * [Main functions](#main-functions)
 * [How to use](#how-to-use)
 * [Instructions](#instructions)
+* [Doc generator](#doc-generator)
 * [Project diagram](#project-diagram)
 * [Project structure](#project-structure)
 * [Dependencies](#dependencies)
@@ -93,6 +94,14 @@ P.S.: It is possible to copy files from src/sample folder and put it in build/st
   > cmake -G "Visual Studio 17 2022" -A x64 -B "build64"\
   > cmake --build build32 --config Release\
   > cmake --build build64 --config Release
+
+## DOC GENERATOR
+
+1. In "src" folder there is Doxyfile file
+2. To generate docs following commands must be used:
+   > cd src/\
+   > doxygen Doxyfile
+3. Generated doc files will be in "docs/html" folder. 
 
 ## PROJECT DIAGRAM
 
