@@ -58,6 +58,12 @@ P.S.: It is possible to copy files from src/sample folder and put it in build/st
 > {"Name": "StarTrek", "Theatres":["VoxCinema", "AlQanaCinema", "RoxyCinema"]}\
 > ]
 
+6. Run the application.
+7. Example of using:
+
+![](images/booking_service_sample.png)
+   
+
 ## INSTRUCTIONS
 
 ### Linux 
