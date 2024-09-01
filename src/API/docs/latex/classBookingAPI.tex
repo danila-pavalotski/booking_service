@@ -1,0 +1,141 @@
+\hypertarget{classBookingAPI}{}\doxysection{Booking\+API Class Reference}
+\label{classBookingAPI}\index{BookingAPI@{BookingAPI}}
+
+
+Provide methods to work with booking service.  
+
+
+
+
+{\ttfamily \#include $<$bookingapi.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classBookingAPI_a42ffcf7cf275fb7b8ff1c5c171368db2}{Run\+Booking\+Service}} ()
+\begin{DoxyCompactList}\small\item\em Init video processing pipeline. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBookingAPI_a56e72a1be522bbc723a27ae027126264}{Stop\+Booking\+Service}} ()
+\begin{DoxyCompactList}\small\item\em Init video processing pipeline. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classBookingAPI_ab9f69e9c546e997ef6393ee9bdbd048d}{List\+All\+Movies}} ()
+\begin{DoxyCompactList}\small\item\em List all available movies. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classBookingAPI_a8ecb0e17930f6c05a76cccfe1305d806}{List\+All\+Movies\+By\+Theatre}} (std\+::string value)
+\begin{DoxyCompactList}\small\item\em Init video processing pipeline. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classBookingAPI_a66b7a107a5bba29c46aa98338b679e84}{List\+All\+Theatres}} ()
+\begin{DoxyCompactList}\small\item\em Init video processing pipeline. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classBookingAPI_aa9dc634675f59f3e35a9968cbdfb8118}{List\+All\+Theatres\+By\+Movie}} (std\+::string value)
+\begin{DoxyCompactList}\small\item\em Init video processing pipeline. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provide methods to work with booking service. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBookingAPI_ab9f69e9c546e997ef6393ee9bdbd048d}\label{classBookingAPI_ab9f69e9c546e997ef6393ee9bdbd048d}} 
+\index{BookingAPI@{BookingAPI}!ListAllMovies@{ListAllMovies}}
+\index{ListAllMovies@{ListAllMovies}!BookingAPI@{BookingAPI}}
+\doxysubsubsection{\texorpdfstring{ListAllMovies()}{ListAllMovies()}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Booking\+API\+::\+List\+All\+Movies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+List all available movies. 
+
+The method returns list of all available movies from movies.\+json file. \begin{DoxyReturn}{Returns}
+std\+::vector$<$std\+::string$>$ where std\+::string is name of a movie. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBookingAPI_a8ecb0e17930f6c05a76cccfe1305d806}\label{classBookingAPI_a8ecb0e17930f6c05a76cccfe1305d806}} 
+\index{BookingAPI@{BookingAPI}!ListAllMoviesByTheatre@{ListAllMoviesByTheatre}}
+\index{ListAllMoviesByTheatre@{ListAllMoviesByTheatre}!BookingAPI@{BookingAPI}}
+\doxysubsubsection{\texorpdfstring{ListAllMoviesByTheatre()}{ListAllMoviesByTheatre()}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Booking\+API\+::\+List\+All\+Movies\+By\+Theatre (\begin{DoxyParamCaption}\item[{std\+::string}]{value }\end{DoxyParamCaption})}
+
+
+
+Init video processing pipeline. 
+
+The method runs main thread and RTSP servers threads. 
+\begin{DoxyParams}{Parameters}
+{\em params} & Params object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE if was init or FALSE in case any errors. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBookingAPI_a66b7a107a5bba29c46aa98338b679e84}\label{classBookingAPI_a66b7a107a5bba29c46aa98338b679e84}} 
+\index{BookingAPI@{BookingAPI}!ListAllTheatres@{ListAllTheatres}}
+\index{ListAllTheatres@{ListAllTheatres}!BookingAPI@{BookingAPI}}
+\doxysubsubsection{\texorpdfstring{ListAllTheatres()}{ListAllTheatres()}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Booking\+API\+::\+List\+All\+Theatres (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Init video processing pipeline. 
+
+The method runs main thread and RTSP servers threads. 
+\begin{DoxyParams}{Parameters}
+{\em params} & Params object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE if was init or FALSE in case any errors. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBookingAPI_aa9dc634675f59f3e35a9968cbdfb8118}\label{classBookingAPI_aa9dc634675f59f3e35a9968cbdfb8118}} 
+\index{BookingAPI@{BookingAPI}!ListAllTheatresByMovie@{ListAllTheatresByMovie}}
+\index{ListAllTheatresByMovie@{ListAllTheatresByMovie}!BookingAPI@{BookingAPI}}
+\doxysubsubsection{\texorpdfstring{ListAllTheatresByMovie()}{ListAllTheatresByMovie()}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Booking\+API\+::\+List\+All\+Theatres\+By\+Movie (\begin{DoxyParamCaption}\item[{std\+::string}]{value }\end{DoxyParamCaption})}
+
+
+
+Init video processing pipeline. 
+
+The method runs main thread and RTSP servers threads. 
+\begin{DoxyParams}{Parameters}
+{\em params} & Params object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE if was init or FALSE in case any errors. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBookingAPI_a42ffcf7cf275fb7b8ff1c5c171368db2}\label{classBookingAPI_a42ffcf7cf275fb7b8ff1c5c171368db2}} 
+\index{BookingAPI@{BookingAPI}!RunBookingService@{RunBookingService}}
+\index{RunBookingService@{RunBookingService}!BookingAPI@{BookingAPI}}
+\doxysubsubsection{\texorpdfstring{RunBookingService()}{RunBookingService()}}
+{\footnotesize\ttfamily void Booking\+API\+::\+Run\+Booking\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Init video processing pipeline. 
+
+The method runs main thread and RTSP servers threads. 
+\begin{DoxyParams}{Parameters}
+{\em params} & Params object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE if was init or FALSE in case any errors. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBookingAPI_a56e72a1be522bbc723a27ae027126264}\label{classBookingAPI_a56e72a1be522bbc723a27ae027126264}} 
+\index{BookingAPI@{BookingAPI}!StopBookingService@{StopBookingService}}
+\index{StopBookingService@{StopBookingService}!BookingAPI@{BookingAPI}}
+\doxysubsubsection{\texorpdfstring{StopBookingService()}{StopBookingService()}}
+{\footnotesize\ttfamily void Booking\+API\+::\+Stop\+Booking\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Init video processing pipeline. 
+
+The method runs main thread and RTSP servers threads. 
+\begin{DoxyParams}{Parameters}
+{\em params} & Params object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE if was init or FALSE in case any errors. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{bookingapi_8h}{bookingapi.\+h}}\item 
+bookingapi.\+cpp\end{DoxyCompactItemize}
