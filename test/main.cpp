@@ -67,6 +67,7 @@ int main(int, char**){
                  std::cout << " - " << theatre << std::endl;
             }
         }else if(tokens[0] == "list_seats"){
+            if(tokens.size() != 3) continue;
             std::map<std::string, std::vector<int>> s = api.ListAllSeats(tokens[1], tokens[2]);
 
             for(auto& row : s){
@@ -77,6 +78,7 @@ int main(int, char**){
                 std::cout << endl;
             }
         }else if(tokens[0] == "book_seat"){
+            if(tokens.size() != 5) continue;
             api.BookSeat(tokens[1], tokens[2], tokens[3], stoi(tokens[4]));
         }
 
