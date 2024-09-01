@@ -7,6 +7,7 @@ Sample project to provide seat booking in theatres.
 * [Main functions](#main-functions)
 * [How to use](#how-to-use)
 * [Instructions](#instructions)
+* [Project diagram](#project-diagram)
 * [Project structure](#project-structure)
 * [Dependencies](#dependencies)
 
@@ -56,8 +57,6 @@ P.S.: It is possible to copy files from src/sample folder and put it in build/st
 > {"Name": "StarTrek", "Theatres":["VoxCinema", "AlQanaCinema", "RoxyCinema"]}\
 > ]
 
-
-
 ## INSTRUCTIONS
 
 ### Linux 
@@ -97,6 +96,7 @@ P.S.: It is possible to copy files from src/sample folder and put it in build/st
 
 ## PROJECT DIAGRAM
 
+![](images/booking_service_diagram.png)
 
 ## PROJECT STRUCTURE
     .
